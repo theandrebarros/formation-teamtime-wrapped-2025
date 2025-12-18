@@ -435,6 +435,8 @@
         .win-card.parity { --card-glow: var(--accent-green); }
         .win-card.release { --card-glow: var(--accent-gold); }
         .win-card.ai { --card-glow: var(--accent-blue-light); }
+        .win-card.engage { --card-glow: var(--accent-green); }
+        .win-card.theme { --card-glow: var(--accent-orange); }
 
         .win-icon {
             font-size: 2.5rem;
@@ -557,6 +559,10 @@
             text-transform: uppercase;
             letter-spacing: -0.01em;
             margin-bottom: 1rem;
+        }
+
+        .next-title .highlight {
+            color: var(--accent-gold);
         }
 
         .next-text {
@@ -866,7 +872,6 @@
         
         <span class="hero-badge">✨ Year in Review ✨</span>
         <h1><span class="gradient-text">FORMATION</span></h1>
-        <h1>TEAM TIME</h1>
         <h1>WRAPPED</h1>
         <span class="year">2 0 2 5</span>
         
@@ -937,6 +942,44 @@
         </div>
 
         <div class="wins-grid">
+            <div class="win-card release animate-on-scroll">
+                <span class="win-icon">🚀</span>
+                <div class="win-title">Formation Design System v1.0.0</div>
+                <p class="win-description">
+                    Our first stable, multi-platform DS release! Long-term API stability across web, iOS, and Android, aligning with UM bundles for confident version adoption. Figma Libraries now have full design-development parity.
+                </p>
+            </div>
+
+            <div class="win-card engage animate-on-scroll">
+                <span class="win-icon">🤝</span>
+                <div class="win-title">Design Engagement Program</div>
+                <p class="win-description">
+                    Created a sustainable, scalable engagement model that embedded DS designers across verticals to boost adoption & quality.
+                </p>
+                <div class="release-highlights">
+                    <div class="release-item">68% avg usability score</div>
+                    <div class="release-item">78% component/library coverage</div>
+                    <div class="release-item">69 NPS</div>
+                </div>
+            </div>
+
+            <div class="win-card theme animate-on-scroll">
+                <span class="win-icon">🎨</span>
+                <div class="win-title">Product-Level Theming & Library Expansion</div>
+                <p class="win-description">
+                    Enabled teams to adopt and adapt theming systems, empowering BUs to create product-specific themes. Now supporting Racing, Picks, Predicts, and Poker!
+                </p>
+            </div>
+
+            <div class="win-card process animate-on-scroll">
+                <span class="win-icon">📋</span>
+                <div class="win-title">Renewed Design System Request Process</div>
+                <p class="win-description">
+                    Introduced a clear, consistent intake and prioritisation model that improves visibility, boosts self-service, and enables contribution through structured templates.
+                </p>
+                <a href="https://fanduel.atlassian.net/wiki/spaces/DSD/pages/310143748072/Formation+Request+Contribution+Process" target="_blank" class="card-btn">View Process →</a>
+            </div>
+
             <div class="win-card ghost animate-on-scroll">
                 <span class="win-icon">👻</span>
                 <div class="win-title">BugBusters Launched</div>
@@ -944,15 +987,6 @@
                     WHO YOU GONNA CALL? Our bi-weekly support sessions became the go-to for tackling design challenges and busting bugs!
                 </p>
                 <a href="https://outlook.office.com/book/BugBustersYourDesignMythBustingHelpdesk@fanduelgroup.onmicrosoft.com/?ismsaljsauthenabled" target="_blank" class="card-btn">Book a Session →</a>
-            </div>
-
-            <div class="win-card process animate-on-scroll">
-                <span class="win-icon">📋</span>
-                <div class="win-title">Request & Contribution Process</div>
-                <p class="win-description">
-                    We introduced a structured way to submit requests via JIRA — making it easier to prioritize fairly, track progress, and set clear expectations.
-                </p>
-                <a href="https://fanduel.atlassian.net/wiki/spaces/DSD/pages/310143748072/Formation+Request+Contribution+Process" target="_blank" class="card-btn">View Process →</a>
             </div>
 
             <div class="win-card parity animate-on-scroll">
@@ -1000,7 +1034,7 @@
 
         <div class="next-card animate-on-scroll">
             <div class="next-icon">🚀</div>
-            <h3 class="next-title">Big Things Coming in 2026</h3>
+            <h3 class="next-title">Big Things Coming in <span class="highlight">2026</span></h3>
             <p class="next-text">
                 We have a LOT in our pipeline for 2026. Stay tuned for more components, better tooling, and continued innovation!
             </p>
