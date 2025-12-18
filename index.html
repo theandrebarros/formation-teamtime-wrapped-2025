@@ -286,6 +286,14 @@
             color: var(--accent-gold);
         }
 
+        .section-intro {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 1rem auto 0;
+            line-height: 1.7;
+        }
+
         /* Awards Section */
         .awards-section {
             padding: 6rem 1.5rem;
@@ -507,7 +515,7 @@
         /* What's Next Section */
         .next-section {
             padding: 6rem 1.5rem;
-            text-align: center;
+            text-align: left;
         }
 
         .next-card {
@@ -572,10 +580,14 @@
             line-height: 1.7;
         }
 
+        .next-text .highlight {
+            color: var(--accent-gold);
+        }
+
         .next-tags {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 0.75rem;
             margin-top: 1.5rem;
         }
@@ -659,7 +671,7 @@
         /* Tony Token Section */
         .tony-section {
             padding: 6rem 1.5rem;
-            text-align: center;
+            text-align: left;
             min-height: auto;
         }
 
@@ -677,7 +689,7 @@
         .tony-avatar {
             width: 200px;
             height: 200px;
-            margin: 0 auto 1.5rem;
+            margin: 0 0 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -725,7 +737,7 @@
 
         .festive-icons {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 1rem;
             margin-top: 2rem;
             font-size: 2rem;
@@ -886,12 +898,97 @@
         </div>
     </section>
 
+    <!-- Big Wins Section -->
+    <section class="wins-section">
+        <div class="section-header animate-on-scroll">
+            <span class="section-icon">🚀</span>
+            <span class="section-label">Milestones</span>
+            <h2 class="section-title">Big <span class="highlight">Wins</span></h2>
+        </div>
+
+        <div class="wins-grid">
+            <div class="win-card engage animate-on-scroll">
+                <span class="win-icon">🤝</span>
+                <div class="win-title">Design Engagement Program</div>
+                <p class="win-description">
+                    Created a sustainable, scalable engagement model that embedded DS designers across verticals to boost adoption & quality.
+                </p>
+                <div class="release-highlights">
+                    <div class="release-item">68% avg usability score</div>
+                    <div class="release-item">78% component/library coverage</div>
+                    <div class="release-item">69 NPS</div>
+                </div>
+                <a href="https://fanduel.atlassian.net/wiki/spaces/FOR/pages/310131950253/Executive+Summary+-+Formation+Design+System+Alignment+Program#Video-Recap" target="_blank" class="card-btn">Check the Video Recap →</a>
+            </div>
+
+            <div class="win-card theme animate-on-scroll">
+                <span class="win-icon">🎨</span>
+                <div class="win-title">Product-Level Theming & Library Expansion</div>
+                <p class="win-description">
+                    Enabled teams to adopt and adapt theming systems, empowering BUs to create product-specific themes. Now supporting Racing, Picks, Predicts, and Poker!
+                </p>
+            </div>
+
+            <div class="win-card process animate-on-scroll">
+                <span class="win-icon">📋</span>
+                <div class="win-title">Renewed Design System Request Process</div>
+                <p class="win-description">
+                    Introduced a clear, consistent intake and prioritisation model that improves visibility, boosts self-service, and enables contribution through structured templates.
+                </p>
+                <a href="https://fanduel.atlassian.net/wiki/spaces/DSD/pages/310143748072/Formation+Request+Contribution+Process" target="_blank" class="card-btn">View Process →</a>
+            </div>
+
+            <div class="win-card ghost animate-on-scroll">
+                <span class="win-icon">👻</span>
+                <div class="win-title">BugBusters Launched</div>
+                <p class="win-description">
+                    WHO YOU GONNA CALL? Our bi-weekly support sessions became the go-to for tackling design challenges and busting bugs!
+                </p>
+                <a href="https://outlook.office.com/book/BugBustersYourDesignMythBustingHelpdesk@fanduelgroup.onmicrosoft.com/?ismsaljsauthenabled" target="_blank" class="card-btn">Book a Session →</a>
+            </div>
+
+            <div class="win-card release animate-on-scroll">
+                <span class="win-icon">🚀</span>
+                <div class="win-title">Formation Design System v1.0.0</div>
+                <p class="win-description">
+                    Our first stable, multi-platform DS release! Long-term API stability across web, iOS, and Android, aligning with UM bundles for confident version adoption. Figma Libraries now have full design-development parity.
+                </p>
+            </div>
+
+            <div class="win-card parity animate-on-scroll">
+                <span class="win-icon">🔧</span>
+                <div class="win-title">Formation Parity & Documentation Overhaul</div>
+                <p class="win-description">
+                    We made a massive effort to align our Figma libraries with coded components, ensuring a stable, confident v1 release for product teams.
+                </p>
+                <br>
+                <div class="release-highlights">
+                    <div class="release-item">Continuous improvements</div>
+                    <div class="release-item">New component additions</div>
+                    <div class="release-item">20+ refinements</div>
+                    <div class="release-item">Updated documentation</div>
+                </div>
+                <a href="https://www.figma.com/deck/7WRefiWprIAHOOTRcSDV2T/Formation-Team-Time---22-October-2025?node-id=4006-52&t=43suEsRoJQ605v0E-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" class="card-btn">View Presentation →</a>
+            </div>
+
+            <div class="win-card ai animate-on-scroll">
+                <span class="win-icon">🤖</span>
+                <div class="win-title">AI and Automation</div>
+                <p class="win-description">
+                    Created plugins for more efficient adoption of new component libraries and ongoing exploration of new technology integration for maintenance, process, and innovation improvements.
+                </p>
+                <a href="https://fanduel.slack.com/archives/C0702M8BEMP/p1763553228058049" target="_blank" class="card-btn">See it in Action →</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Tony Token Awards Section -->
     <section class="awards-section">
         <div class="section-header animate-on-scroll">
             <span class="section-icon">🏆</span>
             <span class="section-label">Recognition</span>
             <h2 class="section-title">Tony Token <span class="highlight">Awards</span></h2>
+            <p class="section-intro">This year was all about the incredible people who made Formation what it is today. We're celebrating everyone at FanDuel who contributed, partnered with us, and championed our design system.</p>
         </div>
 
         <div class="awards-grid">
@@ -934,120 +1031,6 @@
         </div>
     </section>
 
-    <!-- Big Wins Section -->
-    <section class="wins-section">
-        <div class="section-header animate-on-scroll">
-            <span class="section-icon">🚀</span>
-            <span class="section-label">Milestones</span>
-            <h2 class="section-title">Big <span class="highlight">Wins</span></h2>
-        </div>
-
-        <div class="wins-grid">
-            <div class="win-card release animate-on-scroll">
-                <span class="win-icon">🚀</span>
-                <div class="win-title">Formation Design System v1.0.0</div>
-                <p class="win-description">
-                    Our first stable, multi-platform DS release! Long-term API stability across web, iOS, and Android, aligning with UM bundles for confident version adoption. Figma Libraries now have full design-development parity.
-                </p>
-            </div>
-
-            <div class="win-card engage animate-on-scroll">
-                <span class="win-icon">🤝</span>
-                <div class="win-title">Design Engagement Program</div>
-                <p class="win-description">
-                    Created a sustainable, scalable engagement model that embedded DS designers across verticals to boost adoption & quality.
-                </p>
-                <div class="release-highlights">
-                    <div class="release-item">68% avg usability score</div>
-                    <div class="release-item">78% component/library coverage</div>
-                    <div class="release-item">69 NPS</div>
-                </div>
-            </div>
-
-            <div class="win-card theme animate-on-scroll">
-                <span class="win-icon">🎨</span>
-                <div class="win-title">Product-Level Theming & Library Expansion</div>
-                <p class="win-description">
-                    Enabled teams to adopt and adapt theming systems, empowering BUs to create product-specific themes. Now supporting Racing, Picks, Predicts, and Poker!
-                </p>
-            </div>
-
-            <div class="win-card process animate-on-scroll">
-                <span class="win-icon">📋</span>
-                <div class="win-title">Renewed Design System Request Process</div>
-                <p class="win-description">
-                    Introduced a clear, consistent intake and prioritisation model that improves visibility, boosts self-service, and enables contribution through structured templates.
-                </p>
-                <a href="https://fanduel.atlassian.net/wiki/spaces/DSD/pages/310143748072/Formation+Request+Contribution+Process" target="_blank" class="card-btn">View Process →</a>
-            </div>
-
-            <div class="win-card ghost animate-on-scroll">
-                <span class="win-icon">👻</span>
-                <div class="win-title">BugBusters Launched</div>
-                <p class="win-description">
-                    WHO YOU GONNA CALL? Our bi-weekly support sessions became the go-to for tackling design challenges and busting bugs!
-                </p>
-                <a href="https://outlook.office.com/book/BugBustersYourDesignMythBustingHelpdesk@fanduelgroup.onmicrosoft.com/?ismsaljsauthenabled" target="_blank" class="card-btn">Book a Session →</a>
-            </div>
-
-            <div class="win-card parity animate-on-scroll">
-                <span class="win-icon">🔧</span>
-                <div class="win-title">Formation Parity Work</div>
-                <p class="win-description">
-                    A massive effort to align our Figma libraries with coded components — ensuring a stable, confident v1 release for product teams.
-                </p>
-                <a href="https://www.figma.com/deck/7WRefiWprIAHOOTRcSDV2T/Formation-Team-Time---22-October-2025?node-id=4006-52&t=43suEsRoJQ605v0E-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" class="card-btn">View Presentation →</a>
-            </div>
-
-            <div class="win-card release animate-on-scroll">
-                <span class="win-icon">📦</span>
-                <div class="win-title">Library Release v4.5.0</div>
-                <p class="win-description">
-                    October brought a major release packed with new goodies!
-                </p>
-                <div class="release-highlights">
-                    <div class="release-item">New Accordion component</div>
-                    <div class="release-item">Button "Loading" state</div>
-                    <div class="release-item">Tag "Subtle" variant</div>
-                    <div class="release-item">20+ component refinements</div>
-                    <div class="release-item">Updated documentation</div>
-                </div>
-            </div>
-
-            <div class="win-card ai animate-on-scroll">
-                <span class="win-icon">🤖</span>
-                <div class="win-title">AI Experimentation</div>
-                <p class="win-description">
-                    We started exploring how AI can help us work smarter and faster — laying the groundwork for future innovation!
-                </p>
-                <a href="https://fanduel.slack.com/archives/C0702M8BEMP/p1763553228058049" target="_blank" class="card-btn">See it in Action →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- What's Next Section -->
-    <section class="next-section">
-        <div class="section-header animate-on-scroll">
-            <span class="section-icon">🔮</span>
-            <span class="section-label">Looking Ahead</span>
-            <h2 class="section-title">What's <span class="highlight">Next?</span></h2>
-        </div>
-
-        <div class="next-card animate-on-scroll">
-            <div class="next-icon">🚀</div>
-            <h3 class="next-title">Big Things Coming in <span class="highlight">2026</span></h3>
-            <p class="next-text">
-                We have a LOT in our pipeline for 2026. Stay tuned for more components, better tooling, and continued innovation!
-            </p>
-            <div class="next-tags">
-                <span class="next-tag">New Components</span>
-                <span class="next-tag">Better Tooling</span>
-                <span class="next-tag">Innovation</span>
-                <span class="next-tag">Dark Mode</span>
-            </div>
-        </div>
-    </section>
-
     <!-- Quotes Section -->
     <section class="quotes-section">
         <div class="section-header animate-on-scroll">
@@ -1074,6 +1057,57 @@
                 </p>
                 <span class="quote-mark close">"</span>
             </div>
+
+            <div class="quote-card animate-on-scroll">
+                <span class="quote-mark open">"</span>
+                <h3 class="quote-title">MAKE <span class="highlight">IT EFFORTLESS</span></h3>
+                <p class="quote-text">
+                    Great design should feel natural. We create tools and processes that remove friction and help teams build consistent, accessible, and high-quality experiences without the extra lift.
+                </p>
+                <span class="quote-mark close">"</span>
+            </div>
+
+            <div class="quote-card animate-on-scroll">
+                <span class="quote-mark open">"</span>
+                <h3 class="quote-title">CREATE BELIEVERS, <span class="highlight">NOT JUST USERS</span></h3>
+                <p class="quote-text">
+                    A design system only works if people see its value. We build trust by making Formation intuitive, reliable, and a go-to resource so teams don't just use it, they rely on it.
+                </p>
+                <span class="quote-mark close">"</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Next Section -->
+    <section class="next-section">
+        <div class="section-header animate-on-scroll">
+            <span class="section-icon">🔮</span>
+            <span class="section-label">Looking Ahead</span>
+            <h2 class="section-title">What's <span class="highlight">Next?</span></h2>
+        </div>
+
+        <div class="next-card animate-on-scroll">
+            <div class="next-icon">🚀</div>
+            <h3 class="next-title">Big Things Coming in <span class="highlight">2026</span></h3>
+            <p class="next-text">
+                We've got big plans coming in 2026.
+                <br><br>
+                <strong class="highlight">Our focus:</strong>
+                <br>
+                Delivering a design system that everyone at FanDuel loves and trusts, built for speed, effortless at scale.
+                <br><br>
+                <strong class="highlight">Our goal:</strong>
+                <br>
+                Empowering every team to execute faster and with confidence.
+                <br><br>
+                Get ready for more components, better tooling, and game-changing innovation.
+            </p>
+            <div class="next-tags">
+                <span class="next-tag">New Components</span>
+                <span class="next-tag">Better Tooling</span>
+                <span class="next-tag">Innovation</span>
+                <span class="next-tag">Dark Mode</span>
+            </div>
         </div>
     </section>
 
@@ -1088,7 +1122,7 @@
             <p class="tony-message">
                 From all of us on the Formation team, <strong>thank you for an amazing year!</strong>
                 <br><br>
-                Tony Token wishes you all a very <strong>Happy Christmas</strong> and a fantastic <strong>New Year!</strong> 🎉
+                <strong>Tony Token</strong> wishes you joy and celebration as we wrap up this year and <strong>welcome the next!</strong> 🎉
             </p>
             <div class="festive-icons">
                 <span>🎄</span>
