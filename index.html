@@ -696,11 +696,26 @@
             animation: float-avatar 4s ease-in-out infinite;
         }
 
+        .tony-avatar.team-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
         .tony-avatar img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             filter: drop-shadow(0 0 30px rgba(255, 208, 0, 0.5));
+        }
+
+        .tony-avatar.team-photo img {
+            object-fit: cover;
+            filter: none;
+            border-radius: 16px;
         }
 
         @keyframes float-avatar {
@@ -1115,15 +1130,14 @@
     <!-- Tony Token Message Section -->
     <section class="tony-section">
         <div class="tony-card animate-on-scroll">
-            <div class="tony-avatar">
-                <img src="assets/tony-token-santa.png" alt="Tony Token Santa">
+            <div class="tony-avatar team-photo">
+                <img src="assets/formation-team-christmas.png" alt="Formation Team">
             </div>
-            <h3 class="tony-title">A Message from <span class="highlight">Tony Token</span></h3>
-            <p class="tony-subtitle">Formation Team Mascot</p>
+            <h3 class="tony-title">A Message from <span class="highlight">Formation</span></h3>
             <p class="tony-message">
                 From all of us on the Formation team, <strong>thank you for an amazing year!</strong>
                 <br><br>
-                <strong>Tony Token</strong> wishes you joy and celebration as we wrap up this year and <strong>welcome the next!</strong> 🎉
+                We wish you joy and celebration as we wrap up this year and <strong>welcome the next!</strong> 🎉
             </p>
             <div class="festive-icons">
                 <span>🎄</span>

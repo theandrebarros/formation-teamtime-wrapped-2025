@@ -55,7 +55,7 @@ This is an internal celebration page for the Formation Design System team at Fan
 formation-teamtime-wrapped-2025/
 ├── index.html          # Main HTML file
 ├── assets/
-│   └── tony-token-santa.png  # Tony Token mascot image
+│   └── formation-team-christmas.png  # Formation team festive photo
 └── README.md           # This file
 ```
 
